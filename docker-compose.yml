@@ -1,0 +1,62 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: magnus_servis
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  api:
+    build: ./apps/api
+    env_file: ./apps/api/.env
+    depends_on:
+      - mysql
+      - redis
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./apps/api:/app/apps/api
+      - ./packages:/app/packages
+      - ./package.json:/app/package.json
+    command: ["npm", "run", "dev"]
+
+  cms:
+    build: ./apps/cms
+    env_file: ./apps/cms/.env
+    depends_on:
+      - mysql
+    ports:
+      - "1337:1337"
+    volumes:
+      - ./apps/cms:/app/apps/cms
+      - ./package.json:/app/package.json
+      - ./packages:/app/packages
+      - ./apps/api/package.json:/app/apps/api/package.json
+      - ./apps/web/package.json:/app/apps/web/package.json
+    command: ["npm", "run", "develop"]
+
+  web:
+    build: ./apps/web
+    env_file: ./apps/web/.env
+    depends_on:
+      - api
+      - cms
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/web:/app/apps/web
+      - ./package.json:/app/package.json
+      - ./packages:/app/packages
+    command: ["npm", "run", "dev"]
+
+volumes:
+  mysql_data:

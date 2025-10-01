@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_links",
+  "info": {
+    "displayName": "Link",
+    "description": "Jednostavna poveznica koja se može koristiti u navigaciji ili footeru",
+    "icon": "link"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "default": "/"
+    },
+    "description": {
+      "type": "string"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Početna",
+    "service": "Servis",
+    "services": "Usluge",
+    "shop": "Trgovina",
+    "contact": "Kontakt",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Magnus Servis – partner za profesionalnu opremu",
+    "subtitle": "Specijalizirani za caffe aparate, perilice i ledomate. Nudimo prodaju, održavanje i hitne intervencije.",
+    "cta": {
+      "service": "Zatraži servis",
+      "shop": "U trgovinu"
+    }
+  },
+  "shop": {
+    "empty": {
+      "title": "Još nema proizvoda",
+      "description": "U admin sučelju dodajte prvi proizvod kako bi se pojavio u trgovini.",
+      "cta": "Dodaj proizvod u adminu"
+    }
+  },
+  "contact": {
+    "title": "Kontaktirajte nas"
+  },
+  "footer": {
+    "copy": "© {{year}} Magnus Servis. Sva prava pridržana."
+  },
+  "filters": {
+    "brand": "Brand",
+    "all": "Svi",
+    "category": {
+      "perilice": "Perilice",
+      "ledomati": "Ledomati"
+    },
+    "brandSummary": {
+      "all": "Svi brandovi",
+      "prefix": "Filtrirano po brandu"
+    }
+  },
+  "seo": {
+    "description": "Magnus Servis pruža prodaju i servis profesionalnih uređaja za ugostiteljstvo."
+  },
+  "service": {
+    "cta": "Zatraži servis"
+  }
+}

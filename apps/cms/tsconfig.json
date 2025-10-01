@@ -1,0 +1,14 @@
+{
+  "extends": "@magnus/config/tsconfig.base.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2021",
+    "outDir": "dist",
+    "rootDir": "./",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "build", "dist"]
+}

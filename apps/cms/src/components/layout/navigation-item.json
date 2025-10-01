@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_layout_navigation_items",
+  "info": {
+    "displayName": "Navigation item",
+    "description": "Stavka glavne navigacije s opcionalnim podstavkama",
+    "icon": "list"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "default": "/"
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "children": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.link"
+    }
+  }
+}

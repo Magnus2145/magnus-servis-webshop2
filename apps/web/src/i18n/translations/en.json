@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "home": "Home",
+    "service": "Service",
+    "services": "Services",
+    "shop": "Store",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "hero": {
+    "title": "Magnus Servis – your professional equipment partner",
+    "subtitle": "We specialise in coffee machines, dishwashers and ice makers. Sales, maintenance and emergency repairs.",
+    "cta": {
+      "service": "Book service",
+      "shop": "Visit store"
+    }
+  },
+  "shop": {
+    "empty": {
+      "title": "No products yet",
+      "description": "Add the first product in the admin panel to display it in the store.",
+      "cta": "Add product in admin"
+    }
+  },
+  "contact": {
+    "title": "Get in touch"
+  },
+  "footer": {
+    "copy": "© {{year}} Magnus Servis. All rights reserved."
+  },
+  "filters": {
+    "brand": "Brand",
+    "all": "All",
+    "category": {
+      "perilice": "Dishwashers",
+      "ledomati": "Ice makers"
+    },
+    "brandSummary": {
+      "all": "All brands",
+      "prefix": "Filtered by brand"
+    }
+  },
+  "seo": {
+    "description": "Magnus Servis provides sales and servicing of professional hospitality equipment."
+  },
+  "service": {
+    "cta": "Request service"
+  }
+}

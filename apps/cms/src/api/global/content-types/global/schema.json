@@ -1,0 +1,107 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global settings"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tagline": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "logo": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "favicon": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "primaryColor": {
+      "type": "string",
+      "default": "#0B2545"
+    },
+    "primaryOnColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "secondaryColor": {
+      "type": "string",
+      "default": "#3E92CC"
+    },
+    "secondaryOnColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "#F9C80E"
+    },
+    "accentOnColor": {
+      "type": "string",
+      "default": "#0B2545"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "foregroundColor": {
+      "type": "string",
+      "default": "#0F172A"
+    },
+    "navigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.navigation-item"
+    },
+    "footerColumns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.footer-column"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.social-link"
+    },
+    "contactEmail": {
+      "type": "email"
+    },
+    "contactPhone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

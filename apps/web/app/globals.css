@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0f172a;
+  --brand-primary: #0b2545;
+  --brand-on-primary: #ffffff;
+  --brand-secondary: #3e92cc;
+  --brand-on-secondary: #ffffff;
+  --brand-accent: #f9c80e;
+  --brand-on-accent: #0b2545;
+}
+
+body {
+  @apply bg-background text-foreground font-sans;
+}
+
+main {
+  @apply min-h-screen;
+}

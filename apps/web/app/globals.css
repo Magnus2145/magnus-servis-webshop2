@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 215 32% 14%;
+  --border: 215 32% 92%;
+  --input: 215 32% 92%;
+  --ring: 215 32% 45%;
+}
+
+body {
+  @apply bg-background text-foreground font-sans;
+}
+
+main {
+  @apply min-h-screen;
+}

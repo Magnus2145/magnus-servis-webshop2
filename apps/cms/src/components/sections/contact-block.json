@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_contact_blocks",
+  "info": {
+    "displayName": "Contact block",
+    "icon": "address-card"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showForm": {
+      "type": "boolean",
+      "default": true
+    },
+    "mapEmbedUrl": {
+      "type": "string"
+    },
+    "contactItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.contact-item"
+    }
+  }
+}

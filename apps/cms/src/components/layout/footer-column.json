@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_footer_columns",
+  "info": {
+    "displayName": "Footer column",
+    "description": "Stupac u footeru s naslovom i linkovima",
+    "icon": "columns"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.link"
+    }
+  }
+}

@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 215 32% 14%;
-  --border: 215 32% 92%;
-  --input: 215 32% 92%;
-  --ring: 215 32% 45%;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0f172a;
+  --brand-primary: #0b2545;
+  --brand-on-primary: #ffffff;
+  --brand-secondary: #3e92cc;
+  --brand-on-secondary: #ffffff;
+  --brand-accent: #f9c80e;
+  --brand-on-accent: #0b2545;
 }
 
 body {

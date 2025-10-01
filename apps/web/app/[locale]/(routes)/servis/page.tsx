@@ -1,16 +1,8 @@
+import { PageBuilder } from '@/src/components/cms/page-builder';
 import { fetchPageBySlug } from '@/src/lib/cms';
 
-export default async function ServisPage() {
-  const page = await fetchPageBySlug('servis');
+export default async function ServisPage({ params: { locale } }: { params: { locale: string } }) {
+  const page = await fetchPageBySlug('servis', locale);
 
-  return (
-    <article className="prose prose-slate max-w-none dark:prose-invert">
-      <h1>{page?.title ?? 'Servis'}</h1>
-      {page?.content ? (
-        <div dangerouslySetInnerHTML={{ __html: page.content }} />
-      ) : (
-        <p>TODO: Prepiši sadržaj servisnih usluga iz CMS-a.</p>
-      )}
-    </article>
-  );
+  return <PageBuilder sections={page?.sections ?? []} locale={locale} />;
 }

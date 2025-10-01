@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_call_to_actions",
+  "info": {
+    "displayName": "Call to action",
+    "icon": "bullhorn"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "tone": {
+      "type": "enumeration",
+      "enum": ["primary", "secondary", "muted", "dark"],
+      "default": "primary"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string"
+    }
+  }
+}

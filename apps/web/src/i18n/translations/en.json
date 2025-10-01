@@ -34,6 +34,10 @@
     "category": {
       "perilice": "Dishwashers",
       "ledomati": "Ice makers"
+    },
+    "brandSummary": {
+      "all": "All brands",
+      "prefix": "Filtered by brand"
     }
   },
   "seo": {

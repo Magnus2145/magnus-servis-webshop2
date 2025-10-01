@@ -82,6 +82,14 @@ The Medusa API exposes `/pdf/test` to generate example PDFs (`ponuda`, `racun`, 
 
 Next.js uses `next-intl` with Croatian (`hr`) as the default locale and English (`en`) as secondary. Content is sourced from Strapi single collection entries so editors can maintain both languages from one place.
 
+## CMS-driven layout & branding
+
+- **Global settings** – In Strapi open *Global settings* to manage navigation, footer links, contact details, social profiles and colour palette (primary/secondary/accent, light/dark foregrounds). Updating these values instantly restyles the storefront header, footer and CTA buttons via CSS variables.
+- **Page builder** – Every marketing page (`homepage`, `servis`, `usluge`, `kontakt`, `o-nama`, `pravila*`, `trgovina*`) is assembled from dynamic sections (hero, rich text, feature grid, media highlight, CTA banner, contact block, link grid). Drag-and-drop new components or edit copy directly in Strapi without touching code.
+- **Category storytelling** – Dedicated Strapi entries (`trgovina`, `trgovina-perilice`, `trgovina-ledomati`) let you enrich webshop landing and category pages with SEO-friendly intros, hero banners and buying guides while the product grid continues to pull live data from Medusa.
+
+All seeded content contains `TODO` placeholders to remind editors where to paste official copy, imagery and links from the existing Magnus Servis site.
+
 ## TODO for launch
 
 - Connect real payment providers (CorvusPay/WSPay/Monri) and shipping integrations (GLS/DPD/HP)

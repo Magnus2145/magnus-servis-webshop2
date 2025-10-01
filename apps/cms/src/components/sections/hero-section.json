@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_sections_hero_sections",
+  "info": {
+    "displayName": "Hero section",
+    "description": "Uvodna sekcija sa CTA gumbima i pozadinskom slikom",
+    "icon": "space-shuttle"
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["split", "center"],
+      "default": "split"
+    },
+    "backgroundStyle": {
+      "type": "enumeration",
+      "enum": ["light", "dark", "gradient", "image"],
+      "default": "gradient"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "primaryCtaLabel": {
+      "type": "string"
+    },
+    "primaryCtaHref": {
+      "type": "string"
+    },
+    "secondaryCtaLabel": {
+      "type": "string"
+    },
+    "secondaryCtaHref": {
+      "type": "string"
+    }
+  }
+}

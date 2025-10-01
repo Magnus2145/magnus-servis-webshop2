@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_contact_items",
+  "info": {
+    "displayName": "Contact item",
+    "icon": "phone"
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

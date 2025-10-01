@@ -9,10 +9,20 @@
   "options": {
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
@@ -20,17 +30,33 @@
       "required": true,
       "unique": true
     },
-    "heroTitle": {
-      "type": "string"
+    "seoTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "heroSubtitle": {
-      "type": "text"
+    "seoDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "content": {
-      "type": "richtext"
-    },
-    "cta": {
-      "type": "string"
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.hero-section",
+        "sections.rich-text",
+        "sections.feature-grid",
+        "sections.media-highlight",
+        "sections.call-to-action",
+        "sections.contact-block",
+        "sections.link-grid"
+      ]
     }
   }
 }

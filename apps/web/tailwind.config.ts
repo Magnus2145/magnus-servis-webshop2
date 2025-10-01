@@ -12,22 +12,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         primary: {
-          DEFAULT: '#0B2545',
-          foreground: '#FFFFFF'
+          DEFAULT: 'var(--brand-primary)',
+          foreground: 'var(--brand-on-primary)'
         },
         secondary: {
-          DEFAULT: '#3E92CC',
-          foreground: '#FFFFFF'
+          DEFAULT: 'var(--brand-secondary)',
+          foreground: 'var(--brand-on-secondary)'
         },
         accent: {
-          DEFAULT: '#F9C80E',
-          foreground: '#0B2545'
+          DEFAULT: 'var(--brand-accent)',
+          foreground: 'var(--brand-on-accent)'
         },
         muted: {
           DEFAULT: '#F5F5F5',
